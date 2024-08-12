@@ -1,0 +1,57 @@
+---
+title: "自建 Sub Store 教程"
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+### Docker镜像获取
+
+##### ⭐️ 推荐 ⭐️ 官方 Docker Hub 打包版:
+
+<LinkCard
+  title="Docker Hub: xream/sub-store"
+  description="由开发者之一 xream 打包的 Docker 镜像"
+  href="https://hub.docker.com/r/xream/sub-store"
+/>
+
+##### 群友打包版:
+
+<LinkCard
+  title="Docker Hub: lin8666/sub-store"
+  description="由 折腾啥 群组的群友 打包的 Docker 镜像"
+  href="https://hub.docker.com/r/xream/sub-store"
+/>
+
+### 快速教程
+
+:::note
+
+此部分适用于 **熟练使用 Docker 的用户**
+
+普通用户请导航至下方[详细部署教程](#详细部署教程)
+
+:::
+
+**请先创建一个用于存储数据的目录**
+
+标准启动指令：
+```bash
+docker run -it -d \
+--restart=always \
+-e "SUB_STORE_CRON=55 23 * * *" \
+-e SUB_STORE_FRONTEND_BACKEND_PATH=/XXXXXxxxxx1234567890 \
+-p YOURIP:3001:3001 \
+-v /etc/sub-store:/opt/app/data \
+--name sub-store \
+xream/sub-store
+```
+
+其中：
+1. 将`SUB_STORE_FRONTEND_BACKEND_PATH`改为`20位随机字符串（不含特殊符号）`
+2. 将`/etc/sub-store`修改为`数据目录`
+3. IP按需修改：
+    1. 本地运行修改为`127.0.0.1`
+    2. 远程访问修改为`服务器IP`
+4. 有HTTP-META需求的将`xream/sub-store`修改为`xream/sub-store:http-meta`
+
+### 详细部署教程

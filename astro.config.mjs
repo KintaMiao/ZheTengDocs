@@ -3,24 +3,33 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://docs.vriancao.top',
+	integrations: [starlight({ title: 'Site with sitemap' })],
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '不折腾文档',
+			locales: {
+				root: {
+				  label: '简体中文',
+				  lang: 'zh-CN',
+				},
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				telegram: 'https://t.me/zhetengsha_group',
 			},
 			sidebar: [
+				{ label:'主页', link:'/' },
+				{ label:'传送门', link:'/home' },
 				{
-					label: 'Guides',
+					label: '项目',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Sub Store', slug: 'project/sub-store/home' },
+						{ label: 'Script Hub', slug: 'project/script-hub/home' },
+						{ label: 'BoxJs', slug: 'project/boxjs/home' },
+						{ label: 'PagerMaid-Pyro', slug: 'project/pagermaid-pyro/home' },
 					],
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+				{ label:'关于', slug:'about/about' }
 			],
 		}),
 	],
