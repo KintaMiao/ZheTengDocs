@@ -69,21 +69,51 @@ xream/sub-store
 请进行选择：
 
 <Tabs>
-  <TabItem label="宝塔面板" icon="star">
+  <TabItem label="Docker" icon="seti:docker">
     <Tabs>
-      <TabItem label="Docker + nginx" icon="star">
-        https://x.vriancao.top/deploy-sub-store-with-docker-and-nginx
+      <TabItem label="宝塔面板" icon="star">
+        <Tabs>
+          <TabItem label="Docker + nginx" icon="moon">
+            <LinkCard
+              title="在宝塔面板上利用Docker和nginx搭建Sub-Store"
+              description="由VrianCao编写的教程"
+              href="https://x.vriancao.top/deploy-sub-store-with-docker-and-nginx"
+            />
+          </TabItem>
+        </Tabs>
+      </TabItem>
+      <TabItem label="命令行" icon="moon">
+        <Tabs>
+          <TabItem label="Docker Compose + Caddy" icon="star">
+            <LinkCard
+              title="透过 Docker Compose 以及 Caddy 部署 Sub-Store"
+              description="由Nebulosa Cat编写的教程"
+              href="https://nebulosa-cat.moe/10/host-sub-store-by-docker-compose-and-caddy/"
+            />
+          </TabItem>
+          <TabItem label="Docker + npm" icon="moon">
+            <LinkCard
+              title="【VPS自建Sub-store】Ubuntu+Docker+npm反代"
+              description=""
+              href="https://boom-sumac-5f2.notion.site/VPS-Sub-store-Ubuntu-Docker-npm-93ea3f047fdb41f99c0bd04085e49adc"
+            />
+          </TabItem>
+          <TabItem label="Docker + nginx" icon="sun">
+            <LinkCard
+              title="通过Docker在VPS上架设Sub-Store"
+              description="由猫咪编写的教程 <br> 请注意：本教程以前存在一些问题，现在应该已经修正，但仍需自行鉴别"
+              href="https://surge.tel/22/2953/"
+            />
+          </TabItem>
+        </Tabs>
       </TabItem>
     </Tabs>
   </TabItem>
-  <TabItem label="命令行" icon="moon">
-    <Tabs>
-      <TabItem label="Docker Compose + Caddy" icon="star">
-        https://nebulosa-cat.moe/10/host-sub-store-by-docker-compose-and-caddy/
-      </TabItem>
-      <TabItem label="Docker + npm" icon="moon">
-        https://boom-sumac-5f2.notion.site/VPS-Sub-store-Ubuntu-Docker-npm-93ea3f047fdb41f99c0bd04085e49adc
-      </TabItem>
-    </Tabs>
+  <TabItem label="直接运行" icon="seti:powershell">
+    <LinkCard
+      title="通过VPS架设Sub-Store(新版)"
+      description="由猫咪编写的、直接在VPS运行Sub Store的教程"
+      href="https://surge.tel/08/2930/"
+    />
   </TabItem>
 </Tabs>

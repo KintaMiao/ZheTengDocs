@@ -4,7 +4,7 @@ title: "Sub Store 主页"
 
 Sub Store 是一款强大的高级订阅管理器，适用于 QX、Loon、Surge、Stash 和 Shadowrocket。
 
-现在Sub Store已拥有多个版本，可以部署在代理App、服务器(基于Docker)、~~Hugging Face~~(近期不可用)，也可作为Android模块(需root并安装模块管理软件)
+现在Sub Store已拥有多个版本，可以部署在代理App、服务器(含Docker版)、~~Hugging Face~~(近期不可用)，也可作为Android模块(需root并安装模块管理软件)
 
 ### Sub Store 能做什么？
 
@@ -29,4 +29,4 @@ Sub Store 是一款强大的高级订阅管理器，适用于 QX、Loon、Surge�
 ### Sub Store 相关教程
 
 1. [代理软件版](/project/sub-store/tutorial/proxyapp)：适用于Loon、QX、Surge、Stash、Shadowrocket
-2. [Docker版](/project/sub-store/tutorial/self)：在自己的服务器上自建Sub Store
+2. [VPS(含Docker版)](/project/sub-store/tutorial/self)：在自己的服务器上自建Sub Store
