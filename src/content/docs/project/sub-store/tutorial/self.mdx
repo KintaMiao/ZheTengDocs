@@ -1,8 +1,12 @@
 ---
 title: "自建 Sub Store 教程"
+prev:
+  link: /project/sub-store/home
+  label: Sub Store 主页
 ---
 
 import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ### Docker镜像获取
 
@@ -55,3 +59,25 @@ xream/sub-store
 4. 有HTTP-META需求的将`xream/sub-store`修改为`xream/sub-store:http-meta`
 
 ### 详细部署教程
+
+请进行选择：
+
+<Tabs>
+  <TabItem label="宝塔面板" icon="star">
+    <Tabs>
+      <TabItem label="Docker + nginx" icon="star">
+        https://x.vriancao.top/deploy-sub-store-with-docker-and-nginx
+      </TabItem>
+    </Tabs>
+  </TabItem>
+  <TabItem label="命令行" icon="moon">
+    <Tabs>
+      <TabItem label="Docker Compose + Caddy" icon="star">
+        https://nebulosa-cat.moe/10/host-sub-store-by-docker-compose-and-caddy/
+      </TabItem>
+      <TabItem label="Docker + npm" icon="moon">
+        https://boom-sumac-5f2.notion.site/VPS-Sub-store-Ubuntu-Docker-npm-93ea3f047fdb41f99c0bd04085e49adc
+      </TabItem>
+    </Tabs>
+  </TabItem>
+</Tabs>

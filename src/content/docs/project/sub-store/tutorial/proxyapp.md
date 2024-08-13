@@ -1,5 +1,8 @@
 ---
 title: "Sub Store 代理工具版教程"
+prev:
+  link: /project/sub-store/home
+  label: Sub Store 主页
 ---
 
 ### 1. Loon
