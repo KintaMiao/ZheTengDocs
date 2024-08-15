@@ -5,6 +5,10 @@ prev:
   label: Sub Store 主页
 ---
 
+:::tip
+本部分转自[GitHub官方教程](https://github.com/sub-store-org/Sub-Store/tree/master/config)
+:::
+
 ### 1. Loon
 安装使用 插件 [`https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon.plugin`](https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon.plugin) 即可。
 
@@ -42,3 +46,7 @@ Surge Mac 版如何支持 SSR, 如何去除 HTTP 传输层以支持 类似 VMess
 1. 使用 Safari 打开这个 https://sub.store 如网页正常打开并且未弹出任何错误提示，说明 Sub-Store 已经配置成功。
 2. 可以把 Sub-Store 添加到主屏幕，即可获得类似于 APP 的使用体验。
 3. 更详细的使用指南请参考[文档](https://www.notion.so/Sub-Store-6259586994d34c11a4ced5c406264b46)。
+
+#### [链接参数说明](/project/sub-store/tutorial/linksreference)
+
+#### [脚本使用说明](/project/sub-store/tutorial/scriptreference)
