@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs.vriancao.top',
+	site: 'https://ztdocs.top',
 	integrations: [starlight({ title: 'Site with sitemap' })],
 	integrations: [
 		starlight({
